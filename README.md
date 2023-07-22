@@ -34,3 +34,11 @@ Before deploying the Lambda function, it's essential to understand how to invoke
 ```sh
 aws lambda invoke --function-name YourFunctionName --payload '{"cleanup": false}' outputfile.txt
 ```
+
+To see the logs tail you can use the following aws cli command:
+
+```sh
+aws logs tail /aws/lambda/YourFunctionName --follow
+```
+
+Happy coding ;)
